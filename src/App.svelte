@@ -22,9 +22,7 @@
 		</select>
 
 
-		<button on:click={() => {
-			//window.location.replace(url);	
-		}}>Submit</button>
+		<button>Submit</button>
 
 	</form>
 
