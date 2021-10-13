@@ -50,7 +50,7 @@
 	<p>or</p>
 
 	<form on:submit|preventDefault = {handleSearch}>
-		<input bind:value={search} placeholder="Search on Bing">
+		<input bind:value={search} placeholder="Search on Bing (beta)">
 		<select bind:value={bing_redirect_mode}>
 			<option value=1>JS Redirect</option>
 			<option value=0>HTTP Redirect</option>
