@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn More | Translate Proxy</title>
+</head>
+<body>
+    <a href="/">Go Back</a>
+    <h1>Redirect Types</h1>
+
+    <p>In TranslateProxy there are two modes of redirects, JS and HTTP (Simulated). We will be going over both of those and the pros and cons of both options</p>
+
+    <h2>JS Redirect</h2>
+    <p>JS Redirects behaves as if you directly typed the link into your URL box. The origin domain (ie: gtp.frankiee.me) will still be in the current session, this means if you were to press your browsers "Back" button it will eventually reach the origin domain. This mode is the most convenient, allowing you to quickly return to the origin website if you mess up the URL link for example.</p>
+
+    <br />
+    <table>
+        <tr>
+          <th>Pro(s)</th>
+          <th>Con(s)</th>
+        </tr>
+        <tr>
+          <td>Convenient</td>
+          <td>Not Stealthy</td>
+        </tr>
+    </table>
+
+    <h2>HTTP (Simulated) Redirect</h2>
+    <p>HTTP Redirects are when a domain is pointing to another domain/IP Address in their DNS Settings. The benefit of this is that because you are directly going to another IP Address so the origin domain is not stored in the session. Of course we can't always be changing where this domain is pointing to, so instead we do a simulated HTTP Redirect, it behaves very similar to a regular HTTP Redirect where the origin domain is not stored in the session history. This means if you press your browsers "Back" button, it will never reach the origin domain (Remember, it will still be in your browser's history log)</p>
+
+    <br />
+    <table>
+        <tr>
+          <th>Pro(s)</th>
+          <th>Con(s)</th>
+        </tr>
+        <tr>
+          <td>Stealthy</td>
+          <td>Not Convenient</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>Kept in Browser's History Log (same with JS Redirects)</td>
+        </tr>
+    </table>
+</body>
+</html>
